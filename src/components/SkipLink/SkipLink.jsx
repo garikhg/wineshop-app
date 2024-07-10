@@ -1,0 +1,1 @@
+import * as SELECTORS from "../../utils/constants/selectors";const SkipLink = () => {    return (        <a href={ `#${ SELECTORS.MAIN_CONTENT_ID }` }           className="text-white sr-only py-2 px-3"        >            Skip to main content        </a>    )}export default SkipLink;

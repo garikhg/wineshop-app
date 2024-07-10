@@ -1,0 +1,1 @@
+import { SkipLink } from "../../components";const Header = () => {    return (        <>            <SkipLink/>            <header className="relative max-w-screen-2xl px-6 mx-auto">                Header            </header>        </>    );}export default Header;
