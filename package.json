@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@apollo/client": "^3.10.8",
@@ -23,22 +25,33 @@
     "uuid": "^10.0.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
     "@fontsource/marcellus": "^5.0.13",
     "@fontsource/marcellus-sc": "^5.0.13",
     "@fontsource/open-sans": "^5.0.28",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.4",
+    "@storybook/addon-essentials": "^8.2.1",
+    "@storybook/addon-interactions": "^8.2.1",
+    "@storybook/addon-links": "^8.2.1",
+    "@storybook/addon-onboarding": "^8.2.1",
+    "@storybook/blocks": "^8.2.1",
+    "@storybook/nextjs": "^8.2.1",
+    "@storybook/react": "^8.2.1",
+    "@storybook/test": "^8.2.1",
     "@tailwindcss/typography": "^0.5.13",
     "@wordpress/base-styles": "^5.3.0",
     "@wordpress/block-library": "^9.3.0",
     "classnames": "^2.5.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
+    "eslint-plugin-storybook": "^0.8.0",
     "graphql": "^16.9.0",
     "jwt-decode": "^4.0.0",
     "next-auth": "^4.24.7",
     "next-secure-headers": "^2.2.0",
     "postcss": "^8",
+    "storybook": "^8.2.1",
     "tailwindcss": "^3.4.1"
   }
 }
