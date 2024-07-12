@@ -37,7 +37,6 @@ const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 const plugins = [
     `medusa-fulfillment-manual`,
     `medusa-payment-manual`,
-    `medusa-fulfillment-manual`,
     {
         resolve: `@medusajs/file-local`,
         options: {
@@ -69,6 +68,10 @@ const modules = {
         redisUrl: REDIS_URL
       }
     },*/
+    inventoryService: {
+        resolve: "@medusajs/inventory",
+        options: {}
+    },
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule["projectConfig"]} */
